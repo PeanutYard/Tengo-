@@ -1,0 +1,363 @@
+body {
+    background-color: rgb(104, 105, 105);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: "Honk", system-ui, sans-serif;
+}
+
+#menu img {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5em;
+}
+
+
+
+header nav #menu {
+    background-color: rgb(131, 131, 131);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    padding: 0.5em;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7em 1em;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+    background-color: rgb(70, 70, 70);
+}
+
+ul {
+    color: white;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+#contactForm {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    background: #f3f3f3;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+}
+
+#contactForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+#contactForm button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#contactForm button:hover {
+    background: #797878;
+}
+
+.nav-box { 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: solid;
+    background-color: rgb(0, 0, 0);
+    border-color : rgb(252, 252, 252) ;
+
+}
+
+.nav-box h1 {
+    color: rgb(255, 254, 254);
+    font-family: sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.career-box {
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    padding: 25px 30px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.career-box h1 {
+    margin: 0;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.career-banner {
+    display: block;
+    width: min(100%, 1500px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.home-box {
+    flex: 1;
+    padding: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(20, 20, 20);
+    box-sizing: border-box;
+}
+
+.home-content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.home-box h2 {
+    margin-top: 0;
+}
+
+.home-image {
+    display: block;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 255, 255) ;
+}
+
+@media (max-width: 600px) {
+    .home-content {
+        flex-direction: column;
+    }
+
+    .home-box {
+        width: 100%;
+        border : solid;
+        border-color : rgb(255, 255, 255);
+    }
+
+    .home-image {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border : 2px solid rgb(94, 94, 94);
+
+    }
+
+    .career-banner,
+    .awards-won {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    .highlights-content {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 25px;
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .video-card {
+        padding: 20px;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: rgb(20, 20, 20);
+    }
+
+    .video-card h2 {
+        margin-top: 0;
+    }
+
+    .video-card a {
+        background-color: rgb(0, 0, 0);
+    }
+
+    @media (max-width: 800px) {
+        .video-list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+.career-content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+.awards-won {
+    display: block;
+    width: min(1500px, 100%);
+    height: auto;
+    margin: 1em auto 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.flex-box {
+    display: flex;
+    margin-left : auto;
+    margin-right : auto;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width: 400px;
+    height : 200px;
+    opacity: 75%;
+}
+
+#tenure-box {
+    border-radius: 75px;
+    height : 75px;
+    width : 300px;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : 3em;
+    border-color: rgb(255, 255, 255);
+    border-width : 4px;
+
+}
+
+.tenure-box h1 {
+    color : rgb(252, 251, 251);
+    font-family: "Jaro", system-ui, sans-serif;
+    text-align : center;
+}
+
+.flex-box h1 {
+    font-family: "Jaro", system-ui, sans-serif;
+    color : rgb(255, 255, 255);
+    font-size : 40px;
+    opacity : 100%;
+}
+
+#content-danso {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: auto;
+    margin: 30px auto;
+    padding: 25px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid white;
+    gap: 12px;
+    font-size : 20px;
+}
+
+#content-danso h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: rgb(1, 196, 255);
+}
+
+.danso-box {
+    display: flex;
+    border-width : 4px;
+    border-color : rgb(255, 255, 255);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    height : 100px;
+    opacity: 85%;
+    border-radius: 50px;
+
+}
+
+
+ body,
+.nav-box h1,
+.flex-box h1,
+#content-danso h1,
+button,
+.content-danso p { 
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
